@@ -9,3 +9,4 @@ Route::get('/', function () {
 
 
 Route::get('register', [AuthController::class, 'register']);
+Route::post('register', [AuthController::class, 'registerpost'])->name('register.post'); //This will be call in form

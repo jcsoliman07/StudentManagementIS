@@ -6,8 +6,8 @@ abstract class Controller
 {
     //
 
-    public function register()
-    {
-        return view('Auth.register');
-    }
+    // public function register()
+    // {
+    //     return view('Auth.register');
+    // }
 }
