@@ -28,7 +28,7 @@ class AuthRequest extends FormRequest
             'regMname'      => 'required|string|max:225',
             'regAddress'    => 'required|string|max:225',
             'regGender'     => 'required|in:M,F',
-            'regEmail'      => 'required|email|unique:registrationtable,email',
+            'regEmail'      => 'required|email|unique:registers,email',
             'regPass'       => 'required|min:6',
             'regConPass'    => 'required|same:regPass',
 
@@ -43,7 +43,7 @@ class AuthRequest extends FormRequest
             'regMname.required'     => 'Middle Name field is required.',
             'regAddress.required'   => 'Address field is required.',
             'regGender.required'    => 'Gender field is required.',
-            'regGender.in'          => 'Gender must be either "Male" or "Female".',
+            'regGender.in'          => 'Gender must be either Male or Female.',
             'regEmail.required'     => 'Student Email field is required.',
             'regEmail.email'        => 'Please enter a valid email address.',
             'regEmail.unique'       => 'This email is already taken.',
